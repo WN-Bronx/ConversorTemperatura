@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "ConversorTemperatura_F_p_C"

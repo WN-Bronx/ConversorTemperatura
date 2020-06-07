@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tViewTemp"
+        android:text="Temperatura"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/eTextTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        />
+
+    <RadioGroup
+        android:id="@+id/rGroupMedicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/rButtonFahrenheit"/>
+
+        <RadioButton
+            android:id="@+id/rButtonCelsios"
+            android:text="Celsios"
+            android:textSize="16sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/rButtonFahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-32dp"
+            android:text="Fahrenheit"
+            android:checked="true"
+            android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bConverterValor"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="#202222"
+        android:textColor="@android:color/white"
+        android:onClick="Converter"
+        android:text="Converter Valor"
+
+        />
+
+</LinearLayout>
